@@ -55,6 +55,7 @@ export default function App() {
       const localUri = await captureRef(imageRef, {
         height:440, quality:1,
       });
+      
 
       await MediaLibrary.saveToLibraryAsync(localUri);
       if (localUri){
